@@ -3,18 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>restaurant page</title>
+    <title>form validation</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#" id="home">Home</a></li>
-                <li><a href="#" id="menu">Menu</a></li>
-                <li><a href="#" id="contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div id="content"></div>
+    <form novalidate>
+        <h3>Validation Test Form</h3>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" required>
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <input type="text" required>
+        </div>
+        <div>
+            <label for="postal-code">Postal Code:</label>
+            <input type="text" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" required>
+        </div>
+        <div>
+            <label for="password-confirmation">Password Confirmation:</label>
+            <input type="password" required>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+    </form>
 </body>
 </html>

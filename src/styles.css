@@ -12,10 +12,51 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    color: black;
+body {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
 }
 
-a:hover {
-    color: #333;
+form {
+    width: max-content;
+    display: grid;
+    gap: 1rem;
+    font-size: 1.15rem;
+}
+
+form h3 {
+    text-align: center;
+}
+
+form div {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+}
+
+form div input {
+    border: none;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 0 0.5rem;
+}
+
+form div input:focus {
+    outline: 1px solid black;
+}
+
+form #submit {
+    width: 50%;
+    padding: 0.5rem;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form #submit:hover {
+    background-color: #ccc;
 }
