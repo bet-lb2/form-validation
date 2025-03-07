@@ -48,7 +48,7 @@ form div input:focus {
     outline: 1px solid black;
 }
 
-form #submit {
+form #submit-btn {
     width: 50%;
     padding: 0.5rem;
     margin: auto;
@@ -59,4 +59,12 @@ form #submit {
 
 form #submit:hover {
     background-color: #ccc;
+}
+
+input:valid {
+    outline: 2px solid lightgreen;
+}
+
+input:invalid {
+    outline: 2px solid coral;
 }

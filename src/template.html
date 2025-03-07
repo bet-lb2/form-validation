@@ -10,25 +10,25 @@
         <h3>Validation Test Form</h3>
         <div>
             <label for="email">Email:</label>
-            <input type="email" required>
+            <input id="email" type="email" required>
         </div>
         <div>
             <label for="country">Country:</label>
-            <input type="text" required>
+            <input id="country" type="text" required>
         </div>
         <div>
             <label for="postal-code">Postal Code:</label>
-            <input type="text" required>
+            <input id="postal-code" pattern="〒?[0-9]{3}-?[0-9]{4}" type="text" required>
         </div>
         <div>
             <label for="password">Password:</label>
-            <input type="password" required>
+            <input id="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" type="password" required>
         </div>
         <div>
             <label for="password-confirmation">Password Confirmation:</label>
-            <input type="password" required>
+            <input id="password-confirmation" type="password" required>
         </div>
-        <button id="submit" type="submit">Submit</button>
+        <button id="submit-btn" type="submit">Submit</button>
     </form>
 </body>
 </html>
